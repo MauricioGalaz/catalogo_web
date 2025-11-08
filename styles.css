@@ -1,0 +1,258 @@
+:root {
+    --primary-color: #004d7a; /* Azul Profundo Profesional */
+    --accent-color: #ffc107; /* Dorado/Amarillo para acentos */
+    --price-color: #d9534f; /* Rojo/Marron Llamativo para el Precio */
+    --light-bg: #f0f4f8; /* Fondo más claro y frío */
+    --dark-text: #343a40;
+    --secondary-color: #6c757d;
+    --border-color: #d1d9e6;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-bg);
+    padding: 0; 
+    color: var(--dark-text);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 77, 122, 0.1);
+}
+
+/* --- Barra de Navegación (Nav) --- */
+.navbar {
+    background-color: var(--primary-color);
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    height: 80px; /* Tamaño del logo */
+    vertical-align: middle;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+/* --- Estilos de Home Page (Hero) --- */
+.container.hero {
+    text-align: center;
+    padding: 80px 25px;
+    margin-top: 50px;
+    box-shadow: none;
+    background: none;
+    border-radius: 0;
+}
+
+.hero .main-title {
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    margin-top: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+    text-transform: uppercase;
+}
+
+.cta-button:hover {
+    background-color: #ffda75;
+    transform: translateY(-2px);
+}
+
+/* --- Encabezados y Branding --- */
+.branding {
+    text-align: center;
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid var(--accent-color);
+}
+
+.instructor {
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin: 0 0 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.main-title {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 5px 0 5px;
+    font-size: 2.2rem;
+    line-height: 1.2;
+}
+
+/* --- Estilos de Búsqueda y Tabla (Catálogo) --- */
+#search-input {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 25px;
+    border: 1px solid var(--border-color);
+    border-radius: 30px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Estilos de Tabla --- */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table th, .table td {
+    padding: 18px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+.table th {
+    background-color: var(--primary-color);
+    color: var(--accent-color); 
+    font-weight: 700;
+}
+.table-hover tbody tr:hover {
+    background-color: #e3f2fd;
+    cursor: pointer;
+    transform: scale(1.005);
+    transition: all 0.2s ease-in-out;
+}
+
+.table td:last-child {
+    font-weight: 700;
+    color: var(--price-color); 
+    text-align: right;
+    font-size: 1.15rem;
+}
+
+/* --- Estilos de Pie de Página (Footer) y Redes Sociales --- */
+.footer {
+    background-color: var(--dark-text);
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons img {
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.social-icons img:hover {
+    opacity: 1;
+}
+
+/* --- Estilos de Formulario de Contacto --- */
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    box-sizing: border-box; 
+}
+
+.submit-button {
+    background-color: var(--price-color); 
+    color: white;
+    font-weight: 700;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* --- Diseño Responsivo (Mobile) --- */
+@media screen and (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo-img {
+        margin-bottom: 10px;
+    }
+    .nav-links a {
+        margin: 0 10px;
+    }
+    .table thead {
+        display: none; 
+    }
+    .table tr {
+        margin-bottom: 15px;
+        border: 1px solid var(--border-color);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+    }
+    .table td {
+        text-align: right !important;
+        padding-left: 50%; 
+        position: relative;
+        border: none;
+    }
+    .table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: 45%;
+        font-weight: 600;
+        color: var(--dark-text);
+        text-align: left;
+    }
+    .table td:last-child::before {
+        content: 'PRECIO';
+        color: var(--primary-color);
+        font-weight: 700;
+    }
+}

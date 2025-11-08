@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Centro de Capacitación de Limache</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html"><img src="img/logo_capa.png" alt="Logo Limache Capacitación" class="logo-img"></a>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="catalogo_cursos.html">Catálogo</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="branding">
+            <p class="instructor">Profesor Mauricio Galaz</p>
+            <h1 class="main-title">Formulario de Contacto</h1>
+            <p class="period">Envíanos tu consulta y te responderemos a la brevedad.</p>
+        </header>
+        
+        <form class="contact-form" action="gracias.html" method="POST">
+            <div>
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            
+            <div>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="telefono">Teléfono (opcional):</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+
+            <div>
+                <label for="curso">Curso o Área de Interés:</label>
+                <select id="curso" name="curso">
+                    <option value="" selected disabled>Seleccione un curso...</option>
+                    <option value="Desarrollo Web">Desarrollo Web</option>
+                    <option value="Seguridad y Redes">Seguridad y Redes</option>
+                    <option value="Bases de Datos">Bases de Datos</option>
+                    <option value="IA y Big Data">IA y Big Data</option>
+                    <option value="Otros">Otro / Consulta General</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="mensaje">Mensaje o Consulta:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-button">Enviar Consulta</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Centro de Capacitación de Limache. Todos los derechos reservados.</p>
+        <p>Contacto: profesor.galaz@limache.cl</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="img/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <img src="img/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="img/linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
